@@ -1,0 +1,27 @@
+<!--{% for in in list1 %}
+    <p>{{ in.interview_id }}</p>
+    <p>{{ in.start_time }}</p>
+    <p>{{ in.end_time }}</p>
+    <p>{{ in.interviewee_email }}</p>
+    <p>{{ in.interviewer_email }}</p>
+{% endfor %}-->
+
+<table style="width:100%">  
+  <tr>
+  	<th>Interview_id</th>
+  	<th>Start_time</th>
+  	<th>End_time</th>
+  	<th>Candidate_email</th>
+  	<th>Interviewer_email</th>
+  </tr>
+
+  {% for in in list1 %}
+  <tr> 	
+    <th>{{ in.interview_id }}</th>
+    <th>{{ in.start_time }}</th>
+    <th>{{ in.end_time }}</th>
+    <th>{{ in.interviewee_email }}</th>
+    <th>{{ in.interviewer_email }}</th>    
+  </tr>
+  {% endfor %}  
+</table>
