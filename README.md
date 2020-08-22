@@ -11,7 +11,7 @@ There are 4 classes(4 relations or tables).
 
 2) InterviewCreation- It contains all the information needed to schedule interviews i.e. email ids of both the interviewer and the candidate, start and end time of the interview and most importantly the interview-id(needed to distinguish different interviews,i.e.primary key).
 
-3 )Interviewer- It contains the email-ids of the interviewers of the interviews alongwith the interview-ids.
+3) Interviewer- It contains the email-ids of the interviewers of the interviews alongwith the interview-ids.
 
 4) Interviewee- It contains the email-ids of the candidates of the interviews alongwith the interview-ids.
 
@@ -33,11 +33,11 @@ There are 2 templates used.
 1) create.html- It is used to create the form to ask the admin to enter the details of the interview. It is used by create_interview_page view.
 2) list.html- This template would get the data from the list_interview_details view to display the interview details.
 
-* All the urls used to display 3 different pages for create, edit and list interviews are added in the urls.py of scheduling_interview app.
+All the urls used to display 3 different pages for create, edit and list interviews are added in the urls.py of scheduling_interview app.
 
-* The new scheduling_interview app is registered under apps.py.
+The new scheduling_interview app is registered under apps.py.
 
-* All the 4 models(User_Detail,InterviewCreation,Interviewer,Interviewee) are registered under admin.py.
+All the 4 models(User_Detail,InterviewCreation,Interviewer,Interviewee) are registered under admin.py.
 
 Since I am not very much familiar with the development using django, I took the help of this basic article to get started. It helped me to create the vrtual environment, install django and create new project(scheduling_interview) under it.
 https://www.datacamp.com/community/tutorials/web-development-django
